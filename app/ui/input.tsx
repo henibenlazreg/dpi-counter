@@ -1,6 +1,10 @@
 'use client';
 
-export function Input({ name, step = "1", value, onChangeCallback, describedBy, label, placeholder }) {
+export function Input(
+    { name, step = "1", value, onChangeCallback, describedBy, label, placeholder } :
+    {name: string, step?: string, value: string, onChangeCallback: any, describedBy: string, label: string, placeholder: string}
+
+) {
     return (
         <div className="w-full rounded-xl border border-zinc-100 bg-white px-4 py-3
             text-sm text-zinc-900 placeholder:text-zinc-400 shadow-[0_1px_3px_rgba(15,23,42,0.08)]
@@ -23,7 +27,7 @@ export function Input({ name, step = "1", value, onChangeCallback, describedBy, 
     );
 }
 
-export function InputErrorMessage({ id, errorsProperty }) {
+export function InputErrorMessage({ id, errorsProperty }: { id: string, errorsProperty: any }) {
     return <div id={id} aria-live="polite" aria-atomic="true">
         {
             errorsProperty

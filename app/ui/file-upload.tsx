@@ -1,25 +1,25 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, DragEvent } from 'react';
 import { ArrowUpTrayIcon } from '@heroicons/react/24/outline';
 
-export default function ImageUploadUI({ callback }) {
+export default function ImageUploadUI({ callback }: any) {
     // old state definitions
     const [isDragging, setIsDragging] = useState(false);
 
-    const handleDragOver = (e) => {
+    const handleDragOver = (e: DragEvent) => {
         e.preventDefault();
         e.stopPropagation();
         setIsDragging(true);
     };
 
-    const handleDragLeave = (e) => {
+    const handleDragLeave = (e: DragEvent) => {
         e.preventDefault();
         e.stopPropagation();
         setIsDragging(false);
     };
 
-    const handleDrop = (e) => {
+    const handleDrop = (e: DragEvent) => {
         e.preventDefault();
         e.stopPropagation();
         setIsDragging(false);
