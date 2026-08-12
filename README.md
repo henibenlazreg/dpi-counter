@@ -1,7 +1,7 @@
 ## DPI calculator
-Author: Heni Ben Lazreg
-Date: 12 August 2026
-Description: A web-based DPI calculator that determines the horizontal and vertical DPI of an image based on its pixel dimensions and intended print dimensions. It supports multiple print measurement units and provides an indication of whether the image is suitable for printing.
+Author: Heni Ben Lazreg 
+Date: 12 August 2026 
+Description: A web-based DPI calculator that determines the horizontal and vertical DPI of an image based on its pixel dimensions and intended print dimensions. It supports multiple print measurement units and provides an indication of whether the image is suitable for printing. 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
