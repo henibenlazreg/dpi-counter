@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dpi calculator",
+  title: "DPI calculator",
   description: "Calculate the DPI of an image for printing.",
 };
 
